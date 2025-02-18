@@ -7,6 +7,7 @@ configDotenv();
 
 import { ENV } from "./ENV";
 import AuthRouter from "./routes/auth";
+import path from "path";
 
 const PORT = ENV.PORT;
 const app = express();
@@ -22,9 +23,7 @@ app.use(express.json());
 
 app.use(AuthRouter);
 
-app.get("/", (req, res) => {
-  res.send("ok! v1.0");
-});
+app.use("/", express.static(path.join(process.cwd(), "../Frontend/dist")));
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
