@@ -28,3 +28,5 @@ app.use("/", express.static(path.join(process.cwd(), "../Frontend/dist")));
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+
+module.exports = app;
