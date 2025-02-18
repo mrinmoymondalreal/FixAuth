@@ -1,0 +1,24 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "mrinmoymondal",
+  "email": "mrinmoymondalreal@gmail.com",
+  "name": "Mrinmoy Mondal",
+  "password": "Mrinmoy Mondal"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "mrinmoymondal",
+  "password": "Mrinmoy Mondal"
+}
+
+
+###
+GET http://localhost:3000/profile
+Cookie: tkn=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1yaW5tb3ltb25kYWwiLCJpZCI6MSwibmFtZSI6Ik1yaW5tb3kgTW9uZGFsIiwiZW1haWwiOiJtcmlubW95bW9uZGFscmVhbEBnbWFpbC5jb20iLCJpYXQiOjE3Mzk4NzUxMDYsImV4cCI6MTczOTg3ODcwNn0.FqTHQlItyuZ79Qs4BWE1MKKZGPgipmtUAsKr2HZmrrQ;ptkn=d048608a-4173-459b-9ace-aeeadce2e344
